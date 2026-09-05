@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google Search Console verification: no real code has been provided yet.
+     Add: <meta name="google-site-verification" content="YOUR_REAL_CODE"> when available. -->
+
+<!-- Google Analytics (GA4): no real Measurement ID has been provided yet.
+     Add the gtag.js snippet with your real G-XXXXXXXXXX ID when available. -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ToolTexx - 20 free online PDF, image, audio and utility tools. Fast, simple, works in your browser.">
+<title>ToolTexx - Simple. Fast. Powerful.</title>
+<link rel="canonical" href="https://www.tooltexx.online/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ToolTexx">
+<meta property="og:title" content="ToolTexx - Simple. Fast. Powerful.">
+<meta property="og:description" content="20 free online PDF, image, audio and utility tools. Fast, simple, works in your browser.">
+<meta property="og:url" content="https://www.tooltexx.online/">
+<meta property="og:image" content="https://www.tooltexx.online/icons/icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ToolTexx - Simple. Fast. Powerful.">
+<meta name="twitter:description" content="20 free online PDF, image, audio and utility tools. Fast, simple, works in your browser.">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9767405787000607"
+     crossorigin="anonymous"></script>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#7c3aed">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ToolTexx">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+<!-- PDF/QR/ZIP/MP3 libraries are no longer loaded here. They are fetched
+     on demand (see loadLibrary() below) only when a visitor actually opens
+     a tool that needs them, instead of blocking every page load. -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "ToolTexx",
+  "url": "https://www.tooltexx.online/",
+  "description": "20 free online PDF, image, audio and utility tools. Fast, simple, works in your browser.",
+  "applicationCategory": "Utility",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Do I need to install software?","acceptedAnswer":{"@type":"Answer","text":"No. ToolTexx is a web-based collection of tools that can be used in a supported browser."}},
+    {"@type":"Question","name":"Does every tool support the same file formats?","acceptedAnswer":{"@type":"Answer","text":"No. Supported formats vary by tool. Each individual tool page identifies the expected input and output formats and important limitations."}},
+    {"@type":"Question","name":"Are my files stored by ToolTexx?","acceptedAnswer":{"@type":"Answer","text":"Many tools process files locally in the browser. Users should check the individual tool and the Privacy Policy for applicable data-handling details."}},
+    {"@type":"Question","name":"What should I do if a conversion fails?","acceptedAnswer":{"@type":"Answer","text":"Check the supported format and file-size limits, try again, and make sure the browser is up to date. Persistent problems can be reported through the Contact page."}}
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="header">
+<div class="header-inner">
+<div class="logo">
+<div class="logo-mark">T</div>
+<div>Tool<span>Texx</span></div>
+</div>
+<button class="menu-btn" id="menuOpenBtn" aria-label="Open menu" aria-haspopup="dialog" aria-expanded="false" aria-controls="menuOverlay">&#9776;</button>
+</div>
+</header>
+
+<div class="homepage-hero-brand" aria-label="ToolTexx">
+  <div class="homepage-hero-mark">T</div>
+  <div class="homepage-hero-name">Tool<span>Texx</span></div>
+</div>
+
+<h1 class="homepage-main-title">Free Online PDF, Image, Audio &amp; Utility Tools</h1>
+<p class="homepage-subtitle">100% Free &bull; Secure &bull; Fast &bull; Easy to Use</p>
+
+<!-- FEATURED: PDF TO WORD (instant convert) -->
+<div class="featured-box">
+<div class="featured-top">
+<div class="featured-icon">PDF</div>
+<div class="featured-title">PDF to Word</div>
+</div>
+<div class="featured-desc">Pick a PDF, get a Word file instantly &mdash; text only, right in your browser.</div>
+<label class="featured-btn" for="featuredFileInput">
+&#8679;&nbsp; Choose File
+</label>
+<input type="file" id="featuredFileInput" accept=".pdf,application/pdf" hidden>
+<div id="featuredStatus" class="featured-status" role="status" aria-live="polite"></div>
+<a id="featuredDownload" class="featured-download" href="#" download>Download Word File</a>
+</div>
+
+<div class="section-label">Your most used tools</div>
+
+<div class="icon-grid" id="iconGrid">
+
+<a class="icon-tile" href="/pdf-merge.html" data-key="merge-pdf">
+<div class="icon-box tag-pdf">PDF</div>
+<div class="icon-label">Merge PDF</div>
+</a>
+
+<a class="icon-tile" href="/pdf-split.html" data-key="split-pdf">
+<div class="icon-box tag-pdf">PDF</div>
+<div class="icon-label">Split PDF</div>
+</a>
+
+<a class="icon-tile" href="/pdf-compress.html" data-key="compress-pdf">
+<div class="icon-box tag-pdf">PDF</div>
+<div class="icon-label">Compress PDF</div>
+</a>
+
+<a class="icon-tile" href="/pdf-to-jpg.html" data-key="pdf-to-jpg">
+<div class="icon-box tag-pdf">PDF</div>
+<div class="icon-label">PDF to JPG</div>
+</a>
+
+<a class="icon-tile" href="/image-compressor.html" data-key="image-compressor">
+<div class="icon-box tag-img">IMG</div>
+<div class="icon-label">Compress Image</div>
+</a>
+
+<a class="icon-tile" href="/image-resizer.html" data-key="image-resizer">
+<div class="icon-box tag-img">IMG</div>
+<div class="icon-label">Resize Image</div>
+</a>
+
+<a class="icon-tile" href="/image-cropper.html" data-key="image-cropper">
+<div class="icon-box tag-img">IMG</div>
+<div class="icon-label">Crop Image</div>
+</a>
+
+<a class="icon-tile" href="/image-converter.html" data-key="image-converter">
+<div class="icon-box tag-img">IMG</div>
+<div class="icon-label">Convert Image</div>
+</a>
+
+<a class="icon-tile" href="/music-converter.html" data-key="music-converter">
+<div class="icon-box tag-audio">MP3</div>
+<div class="icon-label">Music Converter</div>
+</a>
+
+<a class="icon-tile" href="/music-compressor.html" data-key="music-compressor">
+<div class="icon-box tag-audio">MP3</div>
+<div class="icon-label">Music Compressor</div>
+</a>
+
+<a class="icon-tile" href="/qr-generator.html" data-key="qr-generator">
+<div class="icon-box tag-util">QR</div>
+<div class="icon-label">QR Generator</div>
+</a>
+
+<a class="icon-tile" href="/password-generator.html" data-key="password-generator">
+<div class="icon-box tag-util">KEY</div>
+<div class="icon-label">Password Gen.</div>
+</a>
+
+</div>
+
+<button class="all-tools-btn" id="allToolsBtn" aria-haspopup="dialog" aria-expanded="false" aria-controls="menuOverlay">&#9776;&nbsp; All 20 Tools</button>
+
+
+
+<section class="home-content" aria-labelledby="about-tools-heading">
+<style>
+/* Compact information sections: keeps the full useful content available without making the homepage excessively long. */
+.home-content{margin:26px 0 18px;padding:18px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 10px 24px rgba(23,23,35,.05);}
+.home-content h2{font-size:19px;font-weight:800;margin:0 0 8px;color:var(--text);text-align:center;}
+.home-intro{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important;text-align:center;margin:0 0 12px!important;}
+.info-accordion{border-top:1px solid var(--border);}
+.info-accordion details{border-bottom:1px solid var(--border);}
+.info-accordion summary{list-style:none;cursor:pointer;padding:13px 4px;font-size:15px;font-weight:800;color:var(--text);display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.info-accordion summary::-webkit-details-marker{display:none;}
+.info-accordion summary::after{content:'+';font-size:20px;font-weight:500;color:var(--purple);flex:0 0 auto;}
+.info-accordion details[open] summary::after{content:'−';}
+.info-body{padding:0 4px 13px;}
+.info-body p,.info-body li{font-size:14px;line-height:1.6;color:var(--text);}
+.info-body p{margin:0 0 9px;}
+.info-body ul,.info-body ol{margin:7px 0 2px;padding-left:21px;}
+.info-body li{margin:0 0 7px;}
+.info-body a{color:var(--purple);font-weight:700;text-decoration:underline;}
+.info-tool-list{padding-left:20px!important;}
+.info-tool-list li strong{font-weight:800;}
+.home-faq{border-top:1px solid var(--border);margin-top:16px;padding-top:4px;}
+.home-faq h3{font-size:17px;font-weight:800;margin:10px 0 2px;color:var(--text);}
+.home-faq details{border-bottom:1px solid var(--border);padding:11px 0;}
+.home-faq summary{cursor:pointer;font-weight:700;color:var(--text);font-size:14px;}
+.home-faq p{font-size:14px;line-height:1.6;margin:8px 0 0;color:var(--text);}
+</style>
+
+<h2 id="about-tools-heading">Practical online tools for everyday file tasks</h2>
+<p class="home-intro">ToolTexx brings practical PDF, image, audio, text, and everyday utility tools together in one place. Each tool is focused on a specific task, with individual pages providing more detailed instructions, supported formats, and limitations.</p>
+
+<div class="info-accordion">
+<details>
+<summary>PDF Tools — documents, conversion and file organization</summary>
+<div class="info-body">
+<p>PDF files preserve document appearance across devices, but they can also be difficult to edit, combine, separate, or share. ToolTexx provides separate PDF tools so you can choose the operation that matches the job.</p>
+<ul class="info-tool-list">
+<li><strong>PDF to Word</strong> — creates an editable Word document from supported PDF text. It can help when you need to revise or reuse document content. Results can vary with scanned pages, unusual fonts, complex layouts, tables, and graphics.</li>
+<li><strong>Merge PDF</strong> — combines selected PDF documents into one file. It is useful for bringing supporting documents, forms, reports, or related pages together for easier sharing.</li>
+<li><strong>Split PDF</strong> — separates a PDF into selected pages or smaller sections. This is useful when only part of a larger document needs to be shared or kept separately.</li>
+<li><strong>Compress PDF</strong> — attempts to reduce PDF file size. Results vary because PDFs can contain text, images, scans, fonts, and other elements with different storage requirements. Always check an important compressed file.</li>
+<li><strong>PDF to JPG</strong> — converts PDF pages into JPG images. This is useful when a page needs to be viewed or shared as an image instead of a PDF. Multi-page documents can produce separate page images.</li>
+<li><strong>JPG to PDF</strong> — creates a PDF from supported JPG, JPEG, or PNG images. It can be useful for scanned pages, photographs, forms, and simple image-based documents.</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary>Image Tools — compress, resize, crop and convert</summary>
+<div class="info-body">
+<p>Images often need adjustments before they are uploaded, shared, stored, or placed in documents. ToolTexx separates these jobs so you can select the operation you actually need.</p>
+<ul class="info-tool-list">
+<li><strong>Image Compressor</strong> — reduces image file size while aiming to keep the result visually useful. It is helpful when an image is too large to upload or when storage and transfer size matter.</li>
+<li><strong>Image Resizer</strong> — changes an image's pixel dimensions. It is useful when a website, form, document, or profile area requires a particular width or height. Resizing dimensions is different from compressing file size.</li>
+<li><strong>Image Cropper</strong> — removes unwanted areas around an image so attention can be focused on the important part. It is useful for removing empty space or fitting an image into a defined visual area.</li>
+<li><strong>Image Converter</strong> — changes an image between formats supported by the tool. Because formats differ in quality, transparency, metadata, and other characteristics, review important converted images before use.</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary>Audio Tools — supported music conversion and compression</summary>
+<div class="info-body">
+<p>Audio files can differ in format, codec, bitrate, and size. ToolTexx includes two focused audio utilities for supported browser-compatible operations.</p>
+<ul class="info-tool-list">
+<li><strong>Music Converter</strong> — converts supported audio files into another supported format when the browser and selected operation allow it. This can help when an application or device expects a different format.</li>
+<li><strong>Music Compressor</strong> — focuses on reducing the size of supported audio files. Smaller files can be easier to store or transfer, although compression may affect audio quality depending on the source and settings.</li>
+</ul>
+<p>Browser support and audio formats vary, so use the formats shown by the individual tool and review the output before relying on it.</p>
+</div>
+</details>
+
+<details>
+<summary>Text &amp; Developer Tools — quick text and data utilities</summary>
+<div class="info-body">
+<p>Not every task requires a file converter. These tools handle common text and structured-data tasks directly in the browser.</p>
+<ul class="info-tool-list">
+<li><strong>Word Counter</strong> — counts words and other basic text information. It is useful for articles, assignments, descriptions, notes, and other writing tasks.</li>
+<li><strong>Case Converter</strong> — changes text between common capitalization styles, making it easier to clean up or standardize copied text.</li>
+<li><strong>JSON Formatter</strong> — formats JSON so nested objects and arrays are easier to inspect. It is useful for configuration data, API responses, and other structured content. Invalid JSON should be reported rather than silently treated as valid.</li>
+<li><strong>Base64 Encoder</strong> — converts supported text or data into Base64 representation. Base64 is encoding, not encryption, so it should not be used as a method for protecting confidential information.</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary>Everyday Utilities — QR, passwords, units and calculations</summary>
+<div class="info-body">
+<p>ToolTexx also includes small utilities for everyday digital tasks.</p>
+<ul class="info-tool-list">
+<li><strong>QR Generator</strong> — creates a QR code from supported information such as a URL or short text that a phone can scan.</li>
+<li><strong>Password Generator</strong> — creates random password strings for accounts and other uses. Store generated passwords through an appropriate password manager and follow the requirements of the service where the password will be used.</li>
+<li><strong>Unit Converter</strong> — converts measurements between supported units. Always verify the selected unit and result when used for professional, financial, engineering, or safety-critical decisions.</li>
+<li><strong>Calculator</strong> — performs everyday arithmetic. It is intended for ordinary calculations and is not a substitute for specialist software in exact scientific, engineering, accounting, or regulatory work.</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary>Why the tools are separated by purpose</summary>
+<div class="info-body">
+<p>A useful tool website should make it obvious what each tool does before a visitor starts using it. ToolTexx separates document conversion, image preparation, audio processing, text handling, and general utilities so visitors can find the relevant task quickly. Individual tool pages provide more specific information about expected input, supported formats, limitations, and the operation available on that page.</p>
+</div>
+</details>
+
+<details>
+<summary>How to use ToolTexx</summary>
+<div class="info-body">
+<ol>
+<li><strong>Choose the right tool.</strong> Start from the homepage or All 20 Tools menu and select the task that matches your goal.</li>
+<li><strong>Check the requirements.</strong> Review supported formats, limits, and instructions on the individual tool page.</li>
+<li><strong>Provide your input.</strong> Upload a supported file or enter the information requested by the tool.</li>
+<li><strong>Run the operation.</strong> Allow the tool to finish processing. Larger or more complex inputs may take longer.</li>
+<li><strong>Review the result.</strong> Check the output before using it for an important submission, publication, or archive.</li>
+<li><strong>Download or use the result.</strong> Save generated files appropriately and keep the original when it is important.</li>
+</ol>
+</div>
+</details>
+
+<details>
+<summary>Clear expectations and practical limitations</summary>
+<div class="info-body">
+<p>No file converter can guarantee identical results for every possible file. Results may depend on file structure, fonts, images, codecs, browser support, file size, and source complexity. ToolTexx therefore aims to describe relevant limitations rather than promise perfect results for every file. If a conversion fails, check the supported format and file-size limits, then try again with a known-good file.</p>
+</div>
+</details>
+
+<details>
+<summary>Privacy and file handling</summary>
+<div class="info-body">
+<p>Some ToolTexx operations are designed to process information locally in the browser, while other operations may use the site's conversion services. Handling can therefore vary by tool. For sensitive or confidential material, review the applicable tool information and the full <a href="/privacy.html">Privacy Policy</a> before uploading a file. ToolTexx should not replace an organization's approved secure document-handling system.</p>
+</div>
+</details>
+
+<details>
+<summary>What makes a tool useful?</summary>
+<div class="info-body">
+<p>The value of an online utility is not only the final conversion. A useful tool should make the task understandable, accept expected input, provide clear feedback, explain errors, and make the resulting file easy to identify. ToolTexx follows this practical approach across its collection and uses a consistent output naming pattern for generated files.</p>
+</div>
+</details>
+
+<details>
+<summary>When ToolTexx is a good fit</summary>
+<div class="info-body">
+<p>ToolTexx is intended for routine digital tasks such as preparing documents, changing supported file formats, reducing file sizes, adjusting images, checking text, formatting structured data, generating QR codes, converting measurements, and performing everyday calculations. For highly sensitive information, regulated workflows, or specialist professional processing, use the secure systems and software required by your organization or industry.</p>
+</div>
+</details>
+</div>
+
+<div class="home-faq" aria-labelledby="home-faq-heading">
+<h3 id="home-faq-heading">Frequently asked questions</h3>
+<details><summary>Do I need to install software?</summary><p>No. ToolTexx is a web-based collection of tools. Open the website in a supported browser and use the individual tool you need.</p></details>
+<details><summary>Does every tool support the same file formats?</summary><p>No. Supported formats vary by tool. Each individual tool page identifies the expected input and output formats and explains important limitations.</p></details>
+<details><summary>Are my files stored by ToolTexx?</summary><p>Many tools process files locally in the browser, but users should check the individual tool and the Privacy Policy for the applicable data-handling details.</p></details>
+<details><summary>What should I do if a conversion fails?</summary><p>Check the supported format and file-size limits, try the operation again, and make sure your browser is up to date. If the problem continues, use the <a href="/contact.html">Contact page</a> to report the tool, device, browser, and error message.</p></details>
+</div>
+</section>
+
+<div class="footer" role="contentinfo">
+&copy; 2026 ToolTexx &mdash; Online tools for PDF, images, audio, text, and everyday utilities.<br>
+<a href="about.html">About</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a>
+</div>
+
+</div>
+
+<!-- ALL TOOLS MENU OVERLAY -->
+<div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-labelledby="menuHeading" aria-hidden="true">
+<div class="menu-sheet">
+
+<div class="menu-head">
+<h2 id="menuHeading">All 20 Tools</h2>
+<button class="menu-close" id="menuCloseBtn" aria-label="Close menu">&times;</button>
+</div>
+
+<div class="menu-cat">PDF Tools</div>
+<a class="menu-row" href="/pdf-to-word.html" data-key="pdf-to-word"><div class="menu-row-icon tag-pdf">PDF</div><div class="menu-row-name">PDF to Word</div></a>
+<a class="menu-row" href="/pdf-merge.html" data-key="merge-pdf"><div class="menu-row-icon tag-pdf">PDF</div><div class="menu-row-name">Merge PDF</div></a>
+<a class="menu-row" href="/pdf-split.html" data-key="split-pdf"><div class="menu-row-icon tag-pdf">PDF</div><div class="menu-row-name">Split PDF</div></a>
+<a class="menu-row" href="/pdf-compress.html" data-key="compress-pdf"><div class="menu-row-icon tag-pdf">PDF</div><div class="menu-row-name">Compress PDF</div></a>
+<a class="menu-row" href="/pdf-to-jpg.html" data-key="pdf-to-jpg"><div class="menu-row-icon tag-pdf">PDF</div><div class="menu-row-name">PDF to JPG</div></a>
+<a class="menu-row" href="/jpg-to-pdf.html" data-key="jpg-to-pdf"><div class="menu-row-icon tag-pdf">PDF</div><div class="menu-row-name">JPG to PDF</div></a>
+
+<div class="menu-cat">Image Tools</div>
+<a class="menu-row" href="/image-compressor.html" data-key="image-compressor"><div class="menu-row-icon tag-img">IMG</div><div class="menu-row-name">Image Compressor</div></a>
+<a class="menu-row" href="/image-resizer.html" data-key="image-resizer"><div class="menu-row-icon tag-img">IMG</div><div class="menu-row-name">Image Resizer</div></a>
+<a class="menu-row" href="/image-cropper.html" data-key="image-cropper"><div class="menu-row-icon tag-img">IMG</div><div class="menu-row-name">Image Cropper</div></a>
+<a class="menu-row" href="/image-converter.html" data-key="image-converter"><div class="menu-row-icon tag-img">IMG</div><div class="menu-row-name">Image Converter</div></a>
+
+<div class="menu-cat">Audio Tools</div>
+<a class="menu-row" href="/music-converter.html" data-key="music-converter"><div class="menu-row-icon tag-audio">MP3</div><div class="menu-row-name">Music Converter</div></a>
+<a class="menu-row" href="/music-compressor.html" data-key="music-compressor"><div class="menu-row-icon tag-audio">MP3</div><div class="menu-row-name">Music Compressor</div></a>
+
+<div class="menu-cat">Text Tools</div>
+<a class="menu-row" href="/word-counter.html" data-key="word-counter"><div class="menu-row-icon tag-util">TXT</div><div class="menu-row-name">Word Counter</div></a>
+<a class="menu-row" href="/case-converter.html" data-key="case-converter"><div class="menu-row-icon tag-util">Aa</div><div class="menu-row-name">Case Converter</div></a>
+
+<div class="menu-cat">Utilities</div>
+<a class="menu-row" href="/qr-generator.html" data-key="qr-generator"><div class="menu-row-icon tag-util">QR</div><div class="menu-row-name">QR Generator</div></a>
+<a class="menu-row" href="/password-generator.html" data-key="password-generator"><div class="menu-row-icon tag-util">KEY</div><div class="menu-row-name">Password Generator</div></a>
+<a class="menu-row" href="/json-formatter.html" data-key="json-formatter"><div class="menu-row-icon tag-util">{ }</div><div class="menu-row-name">JSON Formatter</div></a>
+<a class="menu-row" href="/base64-encoder.html" data-key="base64-encoder"><div class="menu-row-icon tag-util">64</div><div class="menu-row-name">Base64 Encoder</div></a>
+<a class="menu-row" href="/unit-converter.html" data-key="unit-converter"><div class="menu-row-icon tag-util">&#8596;</div><div class="menu-row-name">Unit Converter</div></a>
+<a class="menu-row" href="/calculator.html" data-key="calculator"><div class="menu-row-icon tag-util">+</div><div class="menu-row-name">Calculator</div></a>
+
+</div>
+</div>
+
+<!-- TOOL WORKSPACE MODAL -->
+<div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+<button class="modal-close" id="modalCloseBtn" aria-label="Close tool">&times;</button>
+<div class="modal-head">
+<div class="modal-icon" id="modalIcon">PDF</div>
+<h2 id="modalTitle">Tool</h2>
+<div class="modal-desc" id="modalDesc"></div>
+</div>
+<div id="toolWorkspace"></div>
+</div>
+</div>
+
+
+<script src="/assets/app.js"></script>
+
+</body>
+</html>
